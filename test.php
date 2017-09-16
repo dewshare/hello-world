@@ -13,6 +13,7 @@ require_once("database.php");
 							if(emailAlreadyExists($email,"log","email") == false )
 							{
 								$sql = "insert into log (email) values ('".$email."')";
+								echo $sql;
 								$r = mysql_query($sql);
 							}
 							
